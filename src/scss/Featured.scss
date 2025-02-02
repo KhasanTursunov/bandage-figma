@@ -1,0 +1,77 @@
+.social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.social h3{
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+color: #737373;
+cursor: pointer;
+}
+.social h3:hover{
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+color: #8EC2F2;
+}
+.spanish{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.spanish h3{
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+color: #252B42;
+}
+.spanish h4{
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+color: #737373;
+}
+.featured_card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 328px;
+    border: 1px solid red;
+height: 100%;
+position: relative;
+padding: 6px;
+}
+.numbers{
+    display: flex;
+    gap: 30px;
+}
+
+.numbers_inside{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.learnMore{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.learnMore h3{
+    cursor: pointer;
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+color: #737373;
+}
+.img_div img{
+    width: 100%;
+}
+
+.featured_wrapper{
+    display: flex;
+    justify-content: space-between;
+}

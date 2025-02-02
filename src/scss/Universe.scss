@@ -1,0 +1,88 @@
+.universe_right p{
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+color: #BDBDBD;
+}
+.universe_right h2{
+font-size: 40px;
+font-weight: 700;
+line-height: 50px;
+color:#252B42;
+}
+.universe_right h3{
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+color: #737373;
+}
+
+.universe_btn1{
+    width: 151px;
+height: 52px;
+padding:15px 40px;
+gap: 10px;
+border-radius: 5px;
+background-color: #2DC071;
+color: white;
+transition: 0.3s linear;
+border: 1px solid transparent;
+}
+
+.universe_btn2{
+width: 171px;
+height: 52px;
+padding: 15px 40px;
+gap: 10px;
+border-radius: 5px;
+border: 1px;
+color: #2DC071;
+background-color: white;
+transition: 0.3s linear;
+border: 1px solid transparent;
+}
+
+.universe_btn1:hover{
+    width: 151px;
+height: 52px;
+padding:15px 40px;
+gap: 10px;
+border-radius: 5px;
+background-color: white;
+color: #2DC071;
+transition: 0.3s linear;
+border: 1px solid #2DC071;
+}
+
+.universe_btn2:hover{
+width: 171px;
+height: 52px;
+padding: 15px 40px;
+gap: 10px;
+border-radius: 5px;
+border: 1px;
+color: white;
+background-color: #2DC071;
+transition: 0.3s linear;
+border: 1px solid #2DC071;
+}
+
+.universe_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.universe_right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.div_for_universe_buttons{
+    gap: 20px;
+    display: flex;
+}
+
+.universe_section{
+    margin: 100px 0;
+}
