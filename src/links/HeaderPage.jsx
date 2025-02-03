@@ -6,7 +6,7 @@ import Editor from '../components/editor/Editor'
 import Bestseller from '../components/bestseller/Bestseller'
 import Universe from '../components/universe/Universe'
 import Featured from '../components/featured/Featured'
-
+import Footer from '../components/footer/Footer'
 const HeaderPage = () => {
   return (
     <>
@@ -17,6 +17,7 @@ const HeaderPage = () => {
         <Bestseller/>
         <Universe/>
         <Featured/>
+        <Footer/>
     </>
 )
 }

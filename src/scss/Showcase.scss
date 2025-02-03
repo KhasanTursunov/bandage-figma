@@ -58,3 +58,23 @@ text-align: center;
 color: #2DC071;
 border: 1px solid transparent;
 }
+
+@media(max-width:450px){
+  
+.showcase_wrapper h1{
+font-size: 48px;
+font-weight: 700;
+line-height: 80px;
+color: #FFFFFF;
+}
+}
+
+@media(max-width:380px){
+  
+.showcase_wrapper h1{
+font-size: 38px;
+font-weight: 700;
+line-height: 60px;
+color: #FFFFFF;
+}
+}

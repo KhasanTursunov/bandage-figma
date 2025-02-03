@@ -97,3 +97,22 @@ color: #737373;
     justify-content: center;
     margin: 40px 0;
 }
+
+@media(max-width:1200px){
+    
+.editorWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.seperate_div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+}

@@ -5,6 +5,7 @@ import User from "../assets/svg/user.svg";
 import Search from "../assets/svg/search.svg";
 import Cart from "../assets/svg/cart.svg";
 import Heart from "../assets/svg/heart.svg";
+import Menu from "../assets/svg/menu.svg";
 const HeaderCom = () => {
   return (
     <>
@@ -12,9 +13,13 @@ const HeaderCom = () => {
         <div className="container">
           <div className="header_wrapper">
             <div className="header_logo">
-              <img src={Logo} alt="" />
+              <NavLink className="navlink_a" to={"/"}>
+                <img src={Logo} alt="" />
+              </NavLink>
             </div>
+
             <div className="header_links">
+              <input class="navbar_checkbox" type="checkbox" id="check"></input>
               <ul id="header_linksID" className="links">
                 <NavLink className="navlink_a" to={"/"}>
                   Home
@@ -52,6 +57,10 @@ const HeaderCom = () => {
                 <img src={Heart} alt="" />
                 <p>1</p>
               </div>
+
+              <label className="header_menu" for="check">
+                <img src={Menu} alt="" />
+              </label>
             </div>
           </div>
         </div>
