@@ -17,6 +17,9 @@ const HomeShowcase = () => {
           </div>
         </div>
       </section>
+      
+
+      
     </>
   );
 };
