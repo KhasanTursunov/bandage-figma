@@ -8,23 +8,30 @@ import Orange from '../../assets/svg/orange.svg'
 import Black from '../../assets/svg/black.svg'
 import { request } from '../../api'
 const Bestseller = () => {
- 
   const [products, setProducts] = useState([]);
+
+  // useEffect(() => {
+  //   request.get(`/products/${id}`)
+  //      .then((res) => {
+  //     console.log(res);
+  //     setData(res.data);
+  //   });
+  // }, []);
 
   useEffect(() => {
     request
-        .get("/products", {
-          params: {
-            limit: 8,
-          },
-        })
-        .then((res) => {
-          console.log(res.data);
-          setProducts(res.data)
-        })
-        .catch((err) => console.error("API Error:", err));
+      .get("/products", {
+        params: {
+          limit: 8,
+        },
+      })
+      .then((res) => {
+        // console.log(res.data);
+        setProducts(res.data);
+      })
+      .catch((err) => console.error("API Error:", err));
   }, []);
-   
+
   return (
     <>
       <section className="bestseller_section">
