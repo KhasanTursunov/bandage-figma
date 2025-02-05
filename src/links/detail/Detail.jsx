@@ -17,17 +17,18 @@ const Detail = () => {
 
   return (
     <>
-      <section>
-        <div className="container">
-          <div className="detail_wrapper">
-            <img
-              src={data?.image}
-              height={250}
-              width={250}
-              alt="Product"
-            />
-            ;
+      <section className="card-container">
+        <div className="card">
+          <img src={data?.image} alt="Product" className="product-image" />
+          <h2 className="product-title">{data?.title}</h2>
+          <div className="rating">
+            <span className="rating-star">★ {data?.rating?.rate}</span>
+            <span className="rating-count">
+              ({data?.rating?.count} Reviews)
+            </span>
           </div>
+          <h3 className="product-price">${data?.price}</h3>
+          <p className="product-description">{data?.description}</p>
         </div>
       </section>
     </>
