@@ -7,8 +7,10 @@ import Green from '../../assets/svg/green.svg'
 import Orange from '../../assets/svg/orange.svg'
 import Black from '../../assets/svg/black.svg'
 import { request } from '../../api'
+import { useNavigate } from 'react-router-dom'
 const Bestseller = () => {
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate()
 
   // useEffect(() => {
   //   request.get(`/products/${id}`)
@@ -49,6 +51,7 @@ const Bestseller = () => {
                   <div className="best_card" key={element.id}>
                     <div className="div_for_main_img">
                       <img
+                        onClick={() => navigate(`/product/${element.id}`)}
                         height={250}
                         width={250}
                         src={element.image}
