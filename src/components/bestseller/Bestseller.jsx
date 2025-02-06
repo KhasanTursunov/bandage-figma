@@ -7,11 +7,14 @@ import Green from '../../assets/svg/green.svg'
 import Orange from '../../assets/svg/orange.svg'
 import Black from '../../assets/svg/black.svg'
 import Heart from "../../assets/svg/heart.svg";
+import { useStateValue } from '../../context'
 
 
 import { useNavigate } from 'react-router-dom'
 const Bestseller = ({ products }) => {
   const navigate = useNavigate();
+  const [state, dispatch] = useStateValue();
+  console.log(state)
 
   return (
     <>
@@ -30,13 +33,19 @@ const Bestseller = ({ products }) => {
                   <div className="best_card" key={element.id}>
                     <div className="div_for_main_img">
                       <img
-                        className='firstImg'
+                        className="firstImg"
                         height={250}
                         width={250}
                         src={element.image}
                         alt={element.title}
                       />
-                      <img className='secondImg' src={Heart} alt="" />
+
+                      <img
+                        className="secondImg"
+                        onClick={() => dispatch({ type: "TOGGLE_LIKE", payload:element })}
+                        src={Heart}
+                        alt=""
+                      />
                     </div>
                     <div className="div_for_main_text">
                       <h3 onClick={() => navigate(`/product/${element.id}`)}>
