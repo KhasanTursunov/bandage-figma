@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/svg/header_logo.svg";
-import User from "../assets/svg/user.svg";
-import Search from "../assets/svg/search.svg";
-import Cart from "../assets/svg/cart.svg";
-import Heart from "../assets/svg/heart.svg";
-import Menu from "../assets/svg/menu.svg";
+import Logo from "../../assets/svg/header_logo.svg";
+import User from "../../assets/svg/user.svg";
+import Search from "../../assets/svg/search.svg";
+import Cart from "../../assets/svg/cart.svg";
+import Heart from "../../assets/svg/heart.svg";
+import Menu from "../../assets/svg/menu.svg";
 const HeaderCom = () => {
   return (
     <>

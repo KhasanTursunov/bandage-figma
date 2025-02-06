@@ -1,12 +1,12 @@
 import React from 'react'
-import Phone from '../assets/svg/phone.svg'
-import Mail from '../assets/svg/mail.svg'
-import Instagram from '../assets/svg/instagram.svg'
-import Youtube from '../assets/svg/youtube.svg'
-import Facebook from '../assets/svg/facebook.svg'
-import Twitter from '../assets/svg/twitter.svg'
-import '../scss/HeaderFirst.scss'
-import '../scss/Global.scss'
+import Phone from '../../assets/svg/phone.svg'
+import Mail from "../../assets/svg/mail.svg";
+import Instagram from '../../assets/svg/instagram.svg'
+import Youtube from '../../assets/svg/youtube.svg'
+import Facebook from '../../assets/svg/facebook.svg'
+import Twitter from '../../assets/svg/twitter.svg'
+import '../../scss/HeaderFirst.scss'
+import '../../scss/Global.scss'
 
 
 const HeaderFirstCom = () => {
