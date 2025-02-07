@@ -9,6 +9,7 @@ import AboutPage from "./links/about/AboutPage";
 import Detail from "./links/detail/Detail";
 import Layout from "./links/layout/Layout";
 import NotFound from "./links/notFound/NotFound";
+import Wishlist from "./links/wishlist/Wishlist";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<HeaderPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/wishlist" element={<Wishlist />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/product/:id" element={<Detail />} />
         </Route>
