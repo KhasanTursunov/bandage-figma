@@ -14,11 +14,7 @@ text-align: center;
 color: #737373;
 }
 
-.div_for_main_img{
-    border: 1px solid red;
-    position: relative;
 
-}
 
 .best_title h3{
 font-size: 24px;
@@ -111,6 +107,25 @@ color: #23856D;
 
 .secondImg{
     position: absolute;
-    top: 6px;
-    right: 6px;
+    top: 2px;
+    right: 2px;
+    border: none;
+    background-color: white;
+}
+
+.div_for_main_img{
+    position: relative;
+
+}
+
+.faheart{
+    color: blue;
+font-size: 16px;
+
+}
+
+.faregheart{
+    color: blue;
+font-size: 16px;
+
 }

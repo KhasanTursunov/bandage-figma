@@ -8,13 +8,14 @@ import Orange from '../../assets/svg/orange.svg'
 import Black from '../../assets/svg/black.svg'
 import Heart from "../../assets/svg/heart.svg";
 import { useStateValue } from '../../context'
+import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 
 import { useNavigate } from 'react-router-dom'
 const Bestseller = ({ products }) => {
   const navigate = useNavigate();
   const [state, dispatch] = useStateValue();
-  console.log(state)
+  console.log(state.wishlist)
 
   return (
     <>
@@ -40,12 +41,25 @@ const Bestseller = ({ products }) => {
                         alt={element.title}
                       />
 
-                      <img
+                      <button
                         className="secondImg"
-                        onClick={() => dispatch({ type: "TOGGLE_LIKE", payload:element })}
-                        src={Heart}
-                        alt=""
-                      />
+                        onClick={() =>
+                          dispatch({ type: "TOGGLE_LIKE", payload: element })
+                        }
+                      >
+
+                        {
+                          state.wishlist?.some(({id}) => id === element.id ) 
+                          ?
+                          <FaHeart className='faheart' />
+                          :
+                          <FaRegHeart className='faregheart'/>
+
+                        }
+
+                      </button>
+
+                    
                     </div>
                     <div className="div_for_main_text">
                       <h3 onClick={() => navigate(`/product/${element.id}`)}>

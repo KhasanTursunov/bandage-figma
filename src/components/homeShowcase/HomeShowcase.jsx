@@ -1,5 +1,4 @@
 import React from "react";
-import ShowcaseImg from "../../assets/svg/homeShowcase.svg";
 import '../../scss/Showcase.scss'
 import '../../scss/Global.scss'
 const HomeShowcase = () => {

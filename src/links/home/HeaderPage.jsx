@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeaderCom from "../../components/homeHeader/HeaderCom";
 import HeaderFirstCom from "../../components/header/HeaderFirstCom";
-import HomeShowcase from "../../components/header/HeaderFirstCom";
+import HomeShowcase from "../../components/homeShowcase/HomeShowcase";
 import Editor from "../../components/editor/Editor";
 import Bestseller from "../../components/bestseller/Bestseller";
 import Universe from "../../components/universe/Universe";
